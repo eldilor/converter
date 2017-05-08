@@ -1,0 +1,85 @@
+body {
+  background-color: $white--2;
+  color: $black--1;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.converter {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h3 {
+  font-weight: normal;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+.tile {
+  @extend .group;
+  background: $white--1;
+  padding: 10px;
+  color: $grey--1;
+  margin: 10px 0;
+}
+input {
+  border: 1px solid $grey--1;
+  border-bottom-left-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+  border-right: 0;
+  font-size: 36px;
+  color: $black--1;
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 60px;
+
+  height: 60px;
+}
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+button {
+  border-bottom-right-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  border: 0;
+  background: $green--1;
+  color: $white--1;
+  font-size: 21px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  outline: 0;
+}
+h5, h6 {
+  color: $black--1;
+  font-weight: normal;
+  text-align: center;
+}
+h5 {
+  font-size: 14px;
+  margin: 10px;
+}
+h6 {
+  font-size: 36px;
+  margin: 20px 0 30px 0;
+}
+.date {
+  color: $grey--1;
+}
